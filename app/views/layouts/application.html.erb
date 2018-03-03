@@ -1,7 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>RepairState</title>
+    <% if @page_title %>
+      <title><%= @page_title %></title>
+    <% else %>
+      <title>Repair State</title>
+    <% end %>
+
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
